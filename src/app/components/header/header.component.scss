@@ -1,0 +1,12 @@
+mat-toolbar{
+  background-color:rgb(8, 9, 46);
+  color: #fff;
+  .example-spacer {
+    flex: 1 auto;
+  }
+  .rutas{
+    display: flex;
+    font-size: 1rem;
+    gap: 1rem;
+  }
+}
