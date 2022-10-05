@@ -1,0 +1,15 @@
+mat-toolbar{
+  background-color:rgb(19, 19, 43);
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  .icons{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .copy{
+    font-size: 1rem;
+    font-weight: 100;
+  }
+}

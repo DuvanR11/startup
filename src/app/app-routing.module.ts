@@ -9,9 +9,11 @@ import { ContactosComponent } from './pages/contactos/contactos.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 
 const routes: Routes = [
+  { path: '',   redirectTo: '/inicio', pathMatch: 'full' },
   { path: 'inicio', component: InicioComponent },
   { path: 'clientes', component: ClientesComponent },
   { path: 'contactanos', component: ContactosComponent },
+  // { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
