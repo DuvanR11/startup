@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { PartnersComponent } from './components/partners/partners.component';
 import { ClientesComponent } from './pages/clientes/clientes.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -19,6 +18,17 @@ import {MatCardModule} from '@angular/material/card';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { AsociadosComponent } from './sliders/asociados/asociados.component';
+import { ProyectosComponent } from './sliders/proyectos/proyectos.component';
+import { ContactanosComponent } from './formularios/contactanos/contactanos.component';
+import { LoginComponent } from './formularios/login/login.component';
+import { ServiciosComponent } from './components/servicios/servicios.component';
+import { WhatsappComponent } from './components/whatsapp/whatsapp.component';
+import { MensajesComponent } from './sliders/mensajes/mensajes.component';
+import { NosotrosComponent } from './components/nosotros/nosotros.component';
 
 
 
@@ -28,9 +38,16 @@ import {MatInputModule} from '@angular/material/input';
     InicioComponent,
     HeaderComponent,
     FooterComponent,
-    PartnersComponent,
     ClientesComponent,
-    ContactosComponent
+    ContactosComponent,
+    AsociadosComponent,
+    ProyectosComponent,
+    ContactanosComponent,
+    LoginComponent,
+    ServiciosComponent,
+    WhatsappComponent,
+    MensajesComponent,
+    NosotrosComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +59,9 @@ import {MatInputModule} from '@angular/material/input';
     MatCardModule,
     CarouselModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore())
   ],
   providers: [],
   bootstrap: [AppComponent]

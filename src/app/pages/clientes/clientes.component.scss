@@ -1,0 +1,41 @@
+.content-productos{
+  background-color:rgb(19, 19, 43);
+  .servicio-titulo{
+    color: #fff;
+    font-size: 2rem;
+    padding-top: 1.5rem;
+  }
+  .productos{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    mat-card{
+     max-height: 18rem;
+     max-width: 20rem;
+     min-height: 18rem;
+     min-width: 20rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition-duration: 1s;
+     &:hover{
+       filter: brightness(50%);
+     }
+     .servicio-text{
+       z-index: 100;
+       font-size: 1.5rem;
+       text-align: center;
+     }
+     img{
+       position:absolute;
+       object-fit: cover;
+       width:100%;
+       height:100%;
+     }
+    }
+
+   }
+}

@@ -12,27 +12,11 @@
   </section>
   <div class="capa"></div>
 </div>
+<app-servicios></app-servicios>
+<app-nosotros></app-nosotros>
+<app-mensajes></app-mensajes>
+<app-asociados></app-asociados>
 
-<section class="asociados">
-  <P class="text-center subtitulo1">PARTNERTS</P>
-  <P class="text-center subtitulo2">Nuestros Asociados</P>
-  <owl-carousel-o [options]="customOptions">
-    <ng-container *ngFor="let slide of dynamicSlides">
-      <ng-template carouselSlide class="contenedor-imagen">
-        <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
-      </ng-template>
-    </ng-container>
-  </owl-carousel-o>
-</section>
 
-<section class="content-productos">
-  <p class="text-center servicio-titulo">Nuestros Servicios</p>
-  <div class="productos" >
-    <mat-card *ngFor="let service of sercivios">
-      <img [src]="service.src" alt="" srcset="">
-      <p class="servicio-text">{{service.text}}</p>
-    </mat-card>
-  </div>
-</section>
-<a href="" class="whatsapp"><i class="bi bi-whatsapp whatsapp-icon"></i></a>
+
 

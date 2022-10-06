@@ -1,0 +1,10 @@
+<section class="content-servicios">
+  <p class="text-center servicio-titulo">Nuestros Servicios</p>
+  <div class="servicios" >
+    <mat-card *ngFor="let service of sercivios card-servicios">
+      <img src="{{service.src}}" alt="">
+      <p class="servicio-text text-center">{{service.text}}</p>
+      <p class="servicio-subtext text-center">Somos expertos en Vtex, Nuestro equipo tiene años de experiencia en esta plataforma. <span class="enlace">Ver mas...</span> </p>
+    </mat-card>
+  </div>
+</section>

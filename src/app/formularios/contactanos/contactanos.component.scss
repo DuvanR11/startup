@@ -1,0 +1,35 @@
+.content-contactenos{
+  padding: 6rem;
+
+  .titulo-form{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  .formulario{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cor{
+    padding: 0%;
+  }
+  .car{
+    padding-right: 1rem;
+  }
+  .mapouter{
+    text-align:right;
+    max-width: auto;
+    max-height: auto;
+  }
+  .gmap_canvas{
+    overflow:hidden;
+    background:none!important;
+    width:auto;
+    height:auto;
+  }
+  .gmap_iframe {
+    max-width:600px;
+    max-height:400px;
+    min-width:600px;
+    min-height:400px;
+  }
+}

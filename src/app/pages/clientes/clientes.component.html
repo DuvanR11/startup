@@ -1,0 +1,9 @@
+<section class="content-productos pt-5">
+  <p class="text-center servicio-titulo">Nuestros Servicios</p>
+  <div class="productos" >
+    <mat-card *ngFor="let service of sercivios">
+      <img [src]="service.src" alt="" srcset="">
+      <p class="servicio-text">{{service.text}}</p>
+    </mat-card>
+  </div>
+</section>

@@ -1,0 +1,26 @@
+section{
+
+  .content-nosotros{
+    padding: 1rem 0!important;
+    margin: 0 !important;
+    .content-nosotros-imagen{
+
+      img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .content-nosotros-texto{
+      display: grid;
+      align-items: center;
+      font-size: 0.9rem;
+
+      .titulo-nosotros{
+        font-size: 2.2rem;
+        padding-top: 1.8rem;
+      }
+    }
+  }
+}
