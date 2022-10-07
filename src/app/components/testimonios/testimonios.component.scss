@@ -1,0 +1,34 @@
+*{
+  p{
+    color: #444444;
+  }
+}
+.content-testiminio{
+  .titulo-video{
+    font-size: 1rem;
+    font-weight: 550;
+  }
+
+  .content-video{
+    width: auto;
+    height: 300px;
+    position: relative;
+
+  }
+  video{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+
+  .card-titulo{
+    font-size: 1rem;
+    font-weight: 550;
+  }
+  .card-pietext{
+    font-size: 0.9rem;
+    font-weight: 550;
+  }
+}

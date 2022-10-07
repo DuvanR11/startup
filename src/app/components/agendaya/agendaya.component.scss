@@ -1,0 +1,13 @@
+.content-agendaya{
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:rgb(19, 19, 43);
+
+  .text{
+    color: #fff;
+    font-size: 1rem;
+  }
+}

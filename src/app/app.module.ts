@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ClientesComponent } from './pages/clientes/clientes.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Modulos Angular Material
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -29,6 +30,11 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
 import { WhatsappComponent } from './components/whatsapp/whatsapp.component';
 import { MensajesComponent } from './sliders/mensajes/mensajes.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
+import { TestimoniosComponent } from './components/testimonios/testimonios.component';
+import { AgendayaComponent } from './components/agendaya/agendaya.component';
+import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
+import { SolicitudComponent } from './pages/admin/solicitud/solicitud.component';
+import { NotfoundComponent } from './pages/notfound/notfound.component';
 
 
 
@@ -47,7 +53,12 @@ import { NosotrosComponent } from './components/nosotros/nosotros.component';
     ServiciosComponent,
     WhatsappComponent,
     MensajesComponent,
-    NosotrosComponent
+    NosotrosComponent,
+    TestimoniosComponent,
+    AgendayaComponent,
+    DashboardComponent,
+    SolicitudComponent,
+    NotfoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,6 +71,8 @@ import { NosotrosComponent } from './components/nosotros/nosotros.component';
     CarouselModule,
     MatFormFieldModule,
     MatInputModule,
+    ReactiveFormsModule,
+    FormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore())
   ],
