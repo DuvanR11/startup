@@ -1,9 +1,18 @@
 <section class="content-productos pt-5">
-  <p class="text-center servicio-titulo">Nuestros Servicios</p>
+  <p class="text-center servicio-titulo mt-4">Nuestros Clientes</p>
+  <p class="text-center mt-3">Aquí hay algunos proyectos de diseño anteriores en los que he trabajado. ¿Quieres ver más? Envíame un correo electrónico .</p>
   <div class="productos" >
-    <mat-card *ngFor="let service of sercivios">
-      <img [src]="service.src" alt="" srcset="">
-      <p class="servicio-text">{{service.text}}</p>
-    </mat-card>
+    <div class="image" *ngFor="let service of sercivios">
+      <img class="image__img" [src]="service.src" alt="Bricks">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title">Bricks</div>
+          <p class="image__description">
+             {{service.text}}
+          </p>
+      </div>
+    </div>
+  </div>
+  <div class="mb-5 mt-5 d-flex justify-content-center">
+    <button class="btn btn-primary btn-lg" [routerLink]="['/contactanos']">Pregunta por el tuyo</button>
   </div>
 </section>

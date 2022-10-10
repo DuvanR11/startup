@@ -4,5 +4,6 @@ export default interface IPersona{
   apellidos: string;
   telefono: number;
   correo: string;
+  categoria: string;
   descripcion: string;
 }

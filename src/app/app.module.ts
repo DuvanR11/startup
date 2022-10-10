@@ -10,6 +10,7 @@ import { ClientesComponent } from './pages/clientes/clientes.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxToastNotifierModule } from 'ngx-toast-notifier';
 
 // Modulos Angular Material
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -35,6 +36,9 @@ import { AgendayaComponent } from './components/agendaya/agendaya.component';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { SolicitudComponent } from './pages/admin/solicitud/solicitud.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { EquipoComponent } from './components/equipo/equipo.component';
+import { MatSelectModule } from "@angular/material/select";
+import { MatOptionModule } from '@angular/material/core';
 
 
 
@@ -59,6 +63,7 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
     DashboardComponent,
     SolicitudComponent,
     NotfoundComponent,
+    EquipoComponent,
   ],
   imports: [
     BrowserModule,
@@ -73,6 +78,9 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
     MatInputModule,
     ReactiveFormsModule,
     FormsModule,
+    MatSelectModule,
+    MatOptionModule,
+    NgxToastNotifierModule.forRoot(),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore())
   ],

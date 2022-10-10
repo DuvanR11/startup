@@ -1,3 +1,12 @@
+*{
+  span{
+    cursor: pointer;
+  }
+  p{
+    cursor: pointer;
+  }
+}
+
 mat-toolbar{
   background-color:rgb(19, 19, 43);
   color: #fff;
@@ -10,6 +19,5 @@ mat-toolbar{
     display: flex;
     font-size: 1rem;
     gap: 1rem;
-    cursor: pointer;
   }
 }
